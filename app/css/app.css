@@ -1,0 +1,15 @@
+body {
+  background-color: tomato;
+}
+
+body header {
+  color: white;
+  display: flex;
+}
+
+body p {
+  color: #ccc;
+  flex: 1;
+}
+
+/*# sourceMappingURL=app.css.map */

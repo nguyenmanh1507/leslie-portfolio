@@ -1,0 +1,14 @@
+body {
+	background-color: tomato;
+
+	header {
+		color: white;
+		display: flex;
+	}
+
+	p {
+		color: #ccc;
+		flex: 1;
+		// filter: blur(10px);
+	}
+}
