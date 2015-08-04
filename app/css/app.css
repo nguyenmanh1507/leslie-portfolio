@@ -203,16 +203,23 @@ ul {
 
 .social-list .social-item {
   display: inline-block;
+  margin: 0 5px;
+}
+
+.social-list .social-item:last-child {
+  margin-right: 0;
+}
+
+.social-list .social-item a {
   height: 32px;
   width: 32px;
   border-radius: 50%;
   border: 2px solid white;
   text-align: center;
-}
-
-.social-list .social-item a {
+  display: inline-block;
   color: white;
   font-size: 13px;
+  line-height: 29px;
 }
 
 /*

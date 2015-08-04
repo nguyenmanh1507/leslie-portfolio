@@ -25,15 +25,22 @@
 
 	.social-item {
 		display: inline-block;
-		height: 32px;
-		width: 32px;
-		border-radius: 50%;
-		border: 2px solid white;
-		text-align: center;
+		margin: 0 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
 
 		a {
+			height: 32px;
+			width: 32px;
+			border-radius: 50%;
+			border: 2px solid white;
+			text-align: center;
+			display: inline-block;
 			color: white;
 			font-size: 13px;
+			line-height: 29px;
 		}
 	}
 }

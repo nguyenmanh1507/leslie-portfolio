@@ -14,10 +14,31 @@ var app = (function(document, $) {
 			Custom JS
 			*/
 
-			// Detect browser unsupport css blend mode
-			if(typeof window.getComputedStyle(document.body).backgroundBlendMode === 'undefined') {
-			  document.documentElement.className += ' no-background-blend-mode';
-			}
+			// Quote background parallax
+			// var $quoteBg = $('#quote-bg');
+			// var $quote = $('#quote');
+			// var quoteOffset = $quote.offset().top;
+			// var quoteOffsetBottom = quoteOffset + $quote.height();
+			// var triggerPoint = quoteOffset - 100;
+			// var $w = $(window);
+			// var wHeight = $w.height();
+			// var wOffsetTop;
+			// var wOffsetBottom;
+			// var topPos = 0;
+
+			// $w.scroll(function() {
+
+			// 	wOffsetTop = $w.scrollTop();
+			// 	wOffsetBottom = wOffsetTop + wHeight;
+
+			// 	if((wOffsetBottom > triggerPoint) && (wOffsetTop <= quoteOffsetBottom)) {
+			// 		console.log('parallax effect');
+			// 		topPos += 1;
+			// 		$quoteBg.css({
+			// 			top: (-1)*topPos +'px'
+			// 		});
+			// 	}
+			// });
 
 			/*
 			End Custom JS
