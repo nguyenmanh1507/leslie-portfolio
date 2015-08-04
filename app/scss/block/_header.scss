@@ -1,0 +1,39 @@
+/*
+ *
+ * HEADER BLOCK
+ *
+*/
+
+.site-header {
+	padding: em-calc(20) 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.site-name {
+	float: left;
+	font-size: em-calc(30);
+	color: $color-primary;
+	margin: 0;
+}
+
+.social-list {
+	float: right;
+
+	.social-item {
+		display: inline-block;
+		height: 32px;
+		width: 32px;
+		border-radius: 50%;
+		border: 2px solid white;
+		text-align: center;
+
+		a {
+			color: white;
+			font-size: 13px;
+		}
+	}
+}

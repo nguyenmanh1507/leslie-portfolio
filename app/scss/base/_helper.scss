@@ -1,0 +1,39 @@
+/*
+ *
+ * HELPER CLASS
+ *
+*/
+
+// CLEARFIX
+
+.cf:before,
+.cf:after {
+  content: ' ';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+// ALIGN TEXT
+.text-center {
+	text-align: center;
+}
+
+// SECTION PADDING
+.padding {
+	padding: em-calc(50) 0;
+}
+
+// ACCESSIBILITY
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

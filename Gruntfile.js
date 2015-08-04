@@ -152,7 +152,8 @@ module.exports = function(grunt) {
 					'<%= app %>/**/*.html'
 				],
 				exclude: [
-					'modernizr'
+					'modernizr',
+					'picturefill'
 				]
 			}
 		}

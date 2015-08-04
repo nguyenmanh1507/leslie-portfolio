@@ -18,7 +18,10 @@
   <link rel="stylesheet" href="css/app.css">
   <!-- endbuild -->
   <!-- build:js js/vendor/modernizr.min.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/modernizr/modernizr.js" async></script>
+  <!-- endbuild -->
+  <!-- build:js js/vendor/picturefill.min.js -->
+  <script src="bower_components/picturefill/dist/picturefill.js" async></script>
   <!-- endbuild -->
 </head>
 <body>
@@ -85,12 +88,12 @@
   <!-- INTRODUCE
   ================================================== -->
   
-  <section class="text-center">
+  <section class="text-center padding">
     <div class="headline">
       <img src="images/icons/camera.png" alt="Icons">
       <h2 class="headline-text">Everyday's a journey</h2>
     </div>
-    <p>
+    <p class="short-para">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </p>
   </section>
@@ -105,8 +108,8 @@
   <!-- QUOTES
   ================================================== -->
   
-  <div class="quote">
-    <img src="images/quote-bg.jpg" alt="Quotes background">
+  <div class="quote text-center">
+    <img src="images/quote-bg.jpg" class="quote-bg" alt="Quotes background">
     <blockquote>
       You never get a second chance <br>
       to make a good first impression
@@ -124,22 +127,10 @@
   <!-- PORTFOLIO
   ================================================== -->
   
-  <div class="portfolio">
+  <div class="portfolio padding text-center">
     <div class="headline">
-      <img src="images/icons/map.png" alt="Icons">
-      <h2 class="headline-text">Find me on:</h2>
-      <ul class="git-list">
-        <li class="git-item">
-          <a href="#"><i class="fa fa-twitter"></i></a>
-        </li>
-        <li class="git-item">
-          <a href="#"><i class="fa fa-flickr"></i></a>
-        </li>
-        <li class="git-item">
-          <a href="#"><i class="fa fa-instagram"></i></a>
-        </li>
-      </ul>
-      <!-- /.git-list -->
+      <img src="images/icons/frame.png" alt="Icons">
+      <h2 class="headline-text">Portfolio</h2>
     </div>
   </div>
   <!-- /.portfolio -->
@@ -153,10 +144,87 @@
 
   <!-- GET IN TOUCH
   ================================================== -->
-  
-  
+
+  <div class="get-in-touch padding text-center">
+
+    <div class="headline">
+      <img src="images/icons/map.png" alt="Icons">
+      <h2 class="headline-text">Find me on:</h2>
+    </div>
+    <ul class="git-list">
+      <li class="git-item">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="git-item">
+        <a href="#"><i class="fa fa-flickr"></i></a>
+      </li>
+      <li class="git-item">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </li>
+    </ul>
+    <!-- /.git-list -->
+    
+  </div>
   
   <!-- END GET IN TOUCH
+  ================================================== -->
+
+
+
+
+
+  <!-- GOOGLE MAP 
+  ================================================== -->
+  
+  <div id="map-canvas"></div>
+  
+  <!-- END GOOGLE MAP 
+  ================================================== -->
+
+
+
+
+
+  <!-- CONTACT FORM
+  ================================================== -->
+  
+  <section class="contact padding">
+    <div class="container">
+      
+      <h2 class="contact-title text-center">interested in my work? let’s get in touch!</h2>  
+
+      <form action="/" method="POST" class="cf">
+
+        <div class="cf-input cf-left">
+          <label for="name" class="sr-only">Your name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="your name">
+        </div>
+
+        <div class="cf-input cf-right">
+          <label for="email" class="sr-only">Your email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="your email">
+        </div>
+
+        <div class="cf-textarea">
+          <label for="message" class="sr-only">Your message</label>
+          <textarea name="message" class="form-control form-textarea" id="message" placeholder="your message"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit</button>
+
+      </form>   
+
+      <footer class="site-footer text-center">
+        <p class="footer-text">&copy; 2015 Leslie Daniels - All rights reserved</p>
+      </footer>
+      <!-- /.site-footer -->
+
+    </div>
+
+  </section>
+  <!-- /.contact-form -->
+  
+  <!-- END CONTACT FORM
   ================================================== -->
 
       

@@ -1,0 +1,19 @@
+/*
+ *
+ * STYLES FOR HEADLINE
+ *
+*/
+
+.headline {
+
+	.headline-text {
+		font-family: $font-family-primary; 
+		font-size: em-calc(24);
+		text-transform: uppercase;
+	}
+}
+
+.short-para {
+	width: 60%;
+	margin: 0 auto;
+}

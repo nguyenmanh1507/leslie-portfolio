@@ -1,0 +1,104 @@
+.contact {
+	background: url(../images/footer-bg.jpg) no-repeat left top;
+	background-size: cover;
+	position: relative;
+	color: $color-primary;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba($color-text, 0.6);
+	}
+
+	.contact-title,
+	.cf,
+	.site-footer {
+		position: relative;
+		z-index: 10;
+	}
+}
+
+.contact-title {
+	font-size: em-calc(24);
+	text-transform: uppercase;
+	font-family: $font-family-primary;
+	letter-spacing: 2px;
+	margin: 0 0 em-calc(50);
+}
+
+.form-control {
+	background-color: rgba(white, 0.7);
+	border: none;
+	box-shadow: none;
+	width: 100%;
+	font-size: em-calc(16);
+	font-weight: bold;
+	color: $color-secondary;
+  text-transform: uppercase;
+  padding: 10px 20px;
+
+  &:hover,
+  &:focus {
+  	outline: none;
+  }
+
+  &.form-textarea {
+  	min-height: 150px;
+  }
+}
+
+.cf-input,
+.cf-textarea {
+	margin-bottom: em-calc(40);
+}
+
+.cf-input {
+	width: 48%;
+}
+
+.cf-left {
+	float: left;
+}
+
+.cf-right {
+	float: right;
+}
+
+.btn-submit {
+	border: 2px solid $color-primary;
+	background: none;
+	display: block;
+	margin: 0 auto;
+	max-width: 400px;
+	width: 100%;
+	padding: 10px 0;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+   color: $color-secondary;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $color-secondary;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $color-secondary;
+}
+
+:-ms-input-placeholder {  
+   color: $color-secondary;
+}
+
+.footer-text {
+	margin: em-calc(40) 0 0;
+	border-top: 2px solid $color-primary;
+	padding-top: em-calc(20);
+}

@@ -1,0 +1,30 @@
+/*
+ *
+ * SLIDER BLOCK
+ *
+*/
+
+.slider {
+	background: url(../images/hero-bg.jpg) no-repeat left top;
+	background-size: cover;
+	position: relative;
+	height: 100%;
+}
+
+.slider-item {
+	position: absolute;
+	color: $color-primary;
+	width: 100%;
+	top: 40%;
+
+	&__title {
+		font-size: em-calc(72);
+		margin: 0 0 rem-calc(20);
+	}
+
+	&__descr {
+		font-family: $font-family-primary;
+		font-size: em-calc(30);
+		margin: 0;
+	}
+}

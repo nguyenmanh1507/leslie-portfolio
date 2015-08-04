@@ -1,0 +1,24 @@
+/*
+ *
+ * GET IN TOUCH BLOCK
+ *
+*/
+
+.git-list {
+
+	.git-item {
+		display: inline-block;
+
+		a {
+			display: inline-block;
+			height: 128px;
+			width: 128px;
+			border-radius: 50%;
+			background-color: $color-secondary;
+			color: $color-primary;
+			line-height: 128px;
+			font-size: 64px;
+			margin: rem-calc(15);
+		}
+	}
+}

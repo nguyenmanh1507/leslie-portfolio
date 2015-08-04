@@ -1,0 +1,42 @@
+/*
+ *
+ * BASE STYLES
+ *
+*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: $body-bg;
+	color: $color-text;
+	font: #{$rem-base}/1.5 $font-family-primary;
+	position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-family-secondary;
+}
+
+p {
+	@include font-size($p-font-sizes);
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
