@@ -40,10 +40,12 @@
 	color: $color-secondary;
   text-transform: uppercase;
   padding: 10px 20px;
+  transition: box-shadow 0.3s ease-out;
 
   &:hover,
   &:focus {
   	outline: none;
+  	box-shadow: 0 0 0 5px rgba(white, 0.3);
   }
 
   &.form-textarea {
@@ -91,12 +93,10 @@
 		width: 100%;
 		background-image: linear-gradient(to top, rgba(white, 0.5), transparent);
 		transform: rotateZ(25deg);
-		// transition: transform 0.7s ease-out;
 	}
 
 	&:hover:after {
-		// transform: rotateZ(25deg) translate(-200%, 600%);
-		animation: glassEffect 0.8s ease-out;
+		animation: glassEffect 0.8s ease-out infinite;
 	}
 }
 

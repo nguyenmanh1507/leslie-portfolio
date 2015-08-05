@@ -441,11 +441,13 @@ blockquote {
   color: #61605f;
   text-transform: uppercase;
   padding: 10px 20px;
+  transition: box-shadow 0.3s ease-out;
 }
 
 .form-control:hover,
 .form-control:focus {
   outline: none;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
 .form-control.form-textarea {
@@ -496,7 +498,7 @@ blockquote {
 }
 
 .btn-submit:hover:after {
-  animation: glassEffect 0.8s ease-out;
+  animation: glassEffect 0.8s ease-out infinite;
 }
 
 ::-webkit-input-placeholder {
