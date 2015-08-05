@@ -15,44 +15,6 @@ var app = (function(document, $) {
 			*/
 
 			// Quote background parallax
-			// var $quoteBg = $('#quote-bg');
-			// var $quote = $('#quote');
-			// var $balloonA = $('.air-balloon-a');
-			// var quoteOffset = $quote.offset().top;
-			// var quoteOffsetBottom = quoteOffset + $quote.height();
-			// var triggerPoint = quoteOffset;
-			// var $w = $(window);
-			// var wHeight = $w.height();
-			// var wOffsetTop;
-			// var wOffsetBottom;
-			// var topPos = 0;
-
-			// // balloon position
-			// var balloonAOffset = $balloonA.offset().top;
-			// var balloonAOffsetBottom = balloonAOffset + $balloonA.height();
-
-			// Parallax effect happen!
-			// $w.scroll(function() {
-
-			// 	wOffsetTop = $w.scrollTop();
-			// 	wOffsetBottom = wOffsetTop + wHeight;
-
-			// 	if((wOffsetBottom > triggerPoint) && (wOffsetTop <= quoteOffsetBottom)) {
-			// 		console.log('parallax effect');
-			// 		$quoteBg.css({
-			// 			top: (quoteOffset - wOffsetBottom)*0.2 + 'px'
-			// 		});
-			// 	}
-
-				// if((wOffsetBottom > (balloonAOffset - 100)) && (wOffsetTop <= balloonAOffsetBottom)) {
-				// 	console.log(balloonAOffsetBottom);
-				// 	$balloonA.css({
-				// 		top: (balloonAOffset - wOffsetBottom)*0.4 + 'px'
-				// 	});
-				// }
-			// });
-
-			// Refactor parallax code
 			// Window var
 			var $w = $(window),
 					wTop,
