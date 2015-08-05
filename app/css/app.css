@@ -225,6 +225,36 @@ img {
   color: white;
   font-size: 13px;
   line-height: 29px;
+  box-shadow: 0 0 0 0 white;
+}
+
+.social-list .social-item a:hover {
+  animation: circle 1s ease-out infinite;
+}
+
+.social-list .social-item.twitter a {
+  box-shadow: 0 0 0 0 #00aced;
+}
+
+.social-list .social-item.instagram a {
+  box-shadow: 0 0 0 0 #517fa4;
+}
+
+.social-list .social-item.flickr a {
+  box-shadow: 0 0 0 0 #ff0084;
+}
+
+.social-list .social-item.pinterest a {
+  box-shadow: 0 0 0 0 #cb2027;
+}
+
+@keyframes circle {
+  40% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  41% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 /*

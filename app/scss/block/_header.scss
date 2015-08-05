@@ -41,6 +41,36 @@
 			color: white;
 			font-size: 13px;
 			line-height: 29px;
+			box-shadow: 0 0 0 0 white;
+
+			&:hover {
+				animation: circle 1s ease-out infinite;
+			}
 		}
+
+		&.twitter a {
+			box-shadow: 0 0 0 0 #00aced;
+		}
+
+		&.instagram a {
+			box-shadow: 0 0 0 0 #517fa4;
+		}
+
+		&.flickr a {
+			box-shadow: 0 0 0 0 #ff0084;
+		}
+
+		&.pinterest a {
+			box-shadow: 0 0 0 0 #cb2027;
+		}
+	}
+}
+
+@keyframes circle {
+	40% {
+		box-shadow: 0 0 0 15px rgba(white, 0.1);
+	}
+	41% {
+		box-shadow: 0 0 0 0 rgba(white, 0);
 	}
 }
