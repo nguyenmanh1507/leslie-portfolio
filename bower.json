@@ -22,6 +22,7 @@
     "normalize.css": "~3.0.3",
     "picturefill": "~2.3.1",
     "angular": "1.4.3",
-    "stellar": "~0.6.2"
+    "parallax": "~2.1.3",
+    "jquery-mousewheel": "~3.1.13"
   }
 }

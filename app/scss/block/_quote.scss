@@ -34,3 +34,28 @@ blockquote {
 	position: relative;
 	z-index: 20;
 }
+
+.air-balloon {
+	position: absolute;
+	top: 100%;
+}
+
+#air-balloon-a {
+	width: 110px;
+	left: 10%;
+}
+
+#air-balloon-b {
+	width: 70px;
+	left: 22%;
+}
+
+#air-balloon-c {
+	width: 200px;
+	right: 3%;
+}
+
+#air-balloon-d {
+	width: 94px;
+	left: 62%;
+}

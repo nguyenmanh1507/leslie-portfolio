@@ -20,6 +20,7 @@ body {
 	color: $color-text;
 	font: #{$rem-base}/1.5 $font-family-primary;
 	position: relative;
+	overflow: auto;
 }
 
 h1,
@@ -39,4 +40,8 @@ ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+
+img {
+	max-width: 100%;
 }

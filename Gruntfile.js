@@ -153,7 +153,8 @@ module.exports = function(grunt) {
 				],
 				exclude: [
 					'modernizr',
-					'picturefill'
+					'picturefill',
+					'parallax'
 				]
 			}
 		}
