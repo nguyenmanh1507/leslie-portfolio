@@ -368,6 +368,35 @@ blockquote {
   line-height: 128px;
   font-size: 64px;
   margin: 0.8333333333rem;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.git-list .git-item a:before,
+.git-list .git-item a:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(97, 96, 95, 0);
+  transition: transform 0.5s ease;
+}
+
+.git-list .git-item a:hover {
+  transform: scale(0.9);
+}
+
+.git-list .git-item a:hover:before {
+  transform: scale(1.3);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.git-list .git-item a:hover:after {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .contact {
@@ -451,6 +480,23 @@ blockquote {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
+  transform: rotateZ(25deg);
+}
+
+.btn-submit:hover:after {
+  animation: glassEffect 0.8s ease-out;
 }
 
 ::-webkit-input-placeholder {
@@ -475,6 +521,12 @@ blockquote {
   margin: 2.2222222222em 0 0;
   border-top: 2px solid #e9e5db;
   padding-top: 1.1111111111em;
+}
+
+@keyframes glassEffect {
+  to {
+    transform: rotateZ(25deg) translate(-200%, 600%);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
