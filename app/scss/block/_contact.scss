@@ -1,5 +1,5 @@
 .contact {
-	background: url(../images/footer-bg.jpg) no-repeat left top;
+	background: url(../images/footer-bg-small.jpg) no-repeat left top;
 	background-size: cover;
 	position: relative;
 	color: $color-primary;
@@ -19,6 +19,14 @@
 	.site-footer {
 		position: relative;
 		z-index: 10;
+	}
+
+	@media screen and (min-width: em-calc(600)) {
+		background-image: url(../images/footer-bg-medium.jpg);
+	}
+
+	@media screen and (min-width: em-calc(1200)) {
+		background-image: url(../images/footer-bg.jpg);
 	}
 }
 

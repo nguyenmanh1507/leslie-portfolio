@@ -10,12 +10,12 @@
 	position: relative;
 	height: 100%;
 
-	@media screen and (min-width: em-calc(1200)) {
-		background-image: url(../images/hero-bg.jpg);
-	}
-
 	@media screen and (min-width: em-calc(600)) {
 		background-image: url(../images/hero-bg-medium.jpg);
+	}
+
+	@media screen and (min-width: em-calc(1200)) {
+		background-image: url(../images/hero-bg.jpg);
 	}
 }
 
