@@ -5,10 +5,18 @@
 */
 
 .slider {
-	background: url(../images/hero-bg.jpg) no-repeat left top;
+	background: url(../images/hero-bg-small.jpg) no-repeat left top;
 	background-size: cover;
 	position: relative;
 	height: 100%;
+
+	@media screen and (min-width: em-calc(1200)) {
+		background-image: url(../images/hero-bg.jpg);
+	}
+
+	@media screen and (min-width: em-calc(600)) {
+		background-image: url(../images/hero-bg-medium.jpg);
+	}
 }
 
 .slider-item {
