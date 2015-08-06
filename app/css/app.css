@@ -229,7 +229,8 @@ img {
 }
 
 .social-list .social-item a:hover {
-  animation: circle 1s ease-out infinite;
+  -webkit-animation: circle 1s ease-out infinite;
+          animation: circle 1s ease-out infinite;
 }
 
 .social-list .social-item.twitter a {
@@ -246,6 +247,15 @@ img {
 
 .social-list .social-item.pinterest a {
   box-shadow: 0 0 0 0 #cb2027;
+}
+
+@-webkit-keyframes circle {
+  40% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  41% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
 }
 
 @keyframes circle {
@@ -369,7 +379,8 @@ blockquote {
   font-size: 64px;
   margin: 0.8333333333rem;
   position: relative;
-  transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+          transition: transform 0.5s ease;
 }
 
 .git-list .git-item a:before,
@@ -382,20 +393,27 @@ blockquote {
   left: 0;
   border-radius: 50%;
   box-shadow: 0 0 0 5px rgba(97, 96, 95, 0);
-  transition: transform 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease;
+          transition: transform 0.5s ease;
 }
 
 .git-list .git-item a:hover {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .git-list .git-item a:hover:before {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .git-list .git-item a:hover:after {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
@@ -441,7 +459,8 @@ blockquote {
   color: #61605f;
   text-transform: uppercase;
   padding: 10px 20px;
-  transition: box-shadow 0.3s ease-out;
+  -webkit-transition: box-shadow 0.3s ease-out;
+          transition: box-shadow 0.3s ease-out;
 }
 
 .form-control:hover,
@@ -493,12 +512,15 @@ blockquote {
   left: 100%;
   height: 100%;
   width: 100%;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), transparent);
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
-  transform: rotateZ(25deg);
+  -webkit-transform: rotateZ(25deg);
+          transform: rotateZ(25deg);
 }
 
 .btn-submit:hover:after {
-  animation: glassEffect 0.8s ease-out infinite;
+  -webkit-animation: glassEffect 0.8s ease-out infinite;
+          animation: glassEffect 0.8s ease-out infinite;
 }
 
 ::-webkit-input-placeholder {
@@ -525,10 +547,16 @@ blockquote {
   padding-top: 1.1111111111em;
 }
 
-@keyframes glassEffect {
+@-webkit-keyframes glassEffect {
   to {
-    transform: rotateZ(25deg) translate(-200%, 600%);
+    -webkit-transform: rotateZ(25deg) translate(-200%, 600%);
+            transform: rotateZ(25deg) translate(-200%, 600%);
   }
 }
 
-/*# sourceMappingURL=app.css.map */
+@keyframes glassEffect {
+  to {
+    -webkit-transform: rotateZ(25deg) translate(-200%, 600%);
+            transform: rotateZ(25deg) translate(-200%, 600%);
+  }
+}
