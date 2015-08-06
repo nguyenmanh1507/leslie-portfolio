@@ -32,8 +32,9 @@
 		box-shadow: inset 1px 1px 1px rgba(black, 0.8);
 		background-color: $body-bg;
 		position: absolute;
-		right: 3px;
-		top: 3px;
+		left: 50%;
+		top: 2px;
+		margin-left: 3px;
 	}
 
 	&:after {
@@ -41,8 +42,9 @@
 		content: '\f08d';
 		color: #44424D;
 		position: absolute;
-		right: -9px;
+		left: 50%;
 		top: -21px;
+		margin-left: 6px;
 		font-size: 25px;
 		text-shadow: 1px 1px 2px rgba(black, 0.5);
 		transform: rotateZ(41deg);
