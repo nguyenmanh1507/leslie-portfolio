@@ -73,7 +73,8 @@ var app = (function(document, $) {
 
 			}
 
-
+			// Filter portfolio
+			$('#p-item-wrap').mixItUp();
 
 			// Vertical mousewheel smooth scroll
 			// var page = $('body');

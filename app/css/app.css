@@ -120,6 +120,11 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: #448D7A;
+  text-decoration: none;
+}
+
 /*
  *
  * HELPER CLASS
@@ -305,6 +310,150 @@ img {
   margin: 0;
 }
 
+/*
+ *
+ * PORTFOLIO BLOCK
+ *
+*/
+.p-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-item-wrap .mix {
+  display: none;
+}
+
+.p-item {
+  background-color: white;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 40px auto 0;
+  padding: 10px;
+  width: 100%;
+  flex-basis: 300px;
+  position: relative;
+}
+
+.p-item:before {
+  content: '';
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.8);
+  background-color: #ddd;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.p-item:after {
+  font-family: fontAwesome;
+  content: '\f08d';
+  color: #44424D;
+  position: absolute;
+  right: -9px;
+  top: -21px;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transform: rotateZ(41deg);
+}
+
+.p-item__thumbnail {
+  transition: -webkit-filter 0.5s;
+}
+
+.p-item__thumbnail:hover {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.p-item__name {
+  margin: 10px 0;
+}
+
+.p-item__name a {
+  border-bottom: 2px dashed #448D7A;
+  padding: 0 4px 4px;
+  position: relative;
+}
+
+.p-item__name a:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transition: transform 0.5s;
+}
+
+.p-item__name a:hover:before {
+  transform: translateX(100%);
+}
+
+.filter-wrap {
+  margin-top: 40px;
+}
+
+.filter {
+  background-color: #C45852;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 5px;
+  position: relative;
+  transition: all 0.5s ease-out;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.filter:hover,
+.filter.active {
+  border: none;
+  border-radius: 3px;
+  transform: translateY(4px);
+}
+
+.filter:focus {
+  outline: none;
+}
+
+.filter:after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: #C45852;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.filter:before {
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+  background: #B9453F;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: transform 0.5s ease-out;
+}
+
+.filter:hover:before,
+.filter.active:before {
+  transform: translateY(-4px);
+}
+
+/*
+ *
+ * QUOTE BLOCK
+ *
+*/
 .quote {
   min-height: 16.6666666667em;
   position: relative;
