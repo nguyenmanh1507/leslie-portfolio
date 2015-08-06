@@ -52,3 +52,24 @@
 		}
 	}
 }
+
+#map-canvas {
+	height: 600px;
+}
+
+.map-wrap {
+	position: relative;
+	
+	#streetview-btn {
+		color: white;
+		border-radius: 4px;
+		border: none;
+		position: absolute;
+		max-width: 170px;
+		width: 100%;
+		background-color: #C45852;
+		z-index: 10000;
+		left: 50%;
+		top: 1%;
+	}
+}

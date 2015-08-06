@@ -566,6 +566,27 @@ blockquote {
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
+#map-canvas {
+  height: 600px;
+}
+
+.map-wrap {
+  position: relative;
+}
+
+.map-wrap #streetview-btn {
+  color: white;
+  border-radius: 4px;
+  border: none;
+  position: absolute;
+  max-width: 170px;
+  width: 100%;
+  background-color: #C45852;
+  z-index: 10000;
+  left: 50%;
+  top: 1%;
+}
+
 .contact {
   background: url(../images/footer-bg-small.jpg) no-repeat left top;
   background-size: cover;
