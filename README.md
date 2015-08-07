@@ -10,6 +10,9 @@ Free Portfolio + working contact form
 * When click to portfolio, modal window show up with related information.
 * Using ajax to paginate portfolio section.
 
+## Browsers Support
+Chrome, FF, IE10+, Opera
+
 ## Tool use
 * [Gruntjs](http://gruntjs.com/) - Task Runner
 * [Bower](http://bower.io) - Package manager
@@ -31,3 +34,19 @@ Free Portfolio + working contact form
 * __grunt-usemin__ - Replaces references to non-optimized scripts or stylesheets into a set of HTML files (or any templates/views).
 * __grunt-wiredep__ - Inject your Bower dependencies right into your HTML from Grunt.
 * __load-grunt-tasks__ - Load multiple grunt tasks using globbing patterns.
+
+### Dependencies
+* __jQuery__(2.1.4)
+* __Modernizr__(2.8.3)
+* __Normalize__(3.0.3)
+* __Picturefill__(2.3.1)
+* __Angular__(1.4.3) - Just experienced form validate using Angularjs
+* __jquery-mousewheel__(3.1.13) - temporary disable cause bug on FF
+* __Mixitup__(2.1.9)
+* __rainyday__(0.1.1) - Not use - uninstall later.
+
+## Inspiration
+placeholder
+
+## Resource
+placehoder
