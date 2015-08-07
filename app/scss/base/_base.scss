@@ -16,7 +16,7 @@ body {
 }
 
 body {
-	background-color: $body-bg;
+	background: $body-bg url(../images/pattern.png);
 	color: $color-text;
 	font: #{$rem-base}/1.5 $font-family-primary;
 	position: relative;

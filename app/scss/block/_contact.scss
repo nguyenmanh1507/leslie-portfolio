@@ -78,6 +78,17 @@
 	float: right;
 }
 
+@media screen and (max-width: 640px) {
+	.cf-input {
+		width: 100%;
+	}
+
+	.cf-left,
+	.cf-right {
+		float: none;
+	}
+}
+
 .btn-submit {
 	border: 2px solid $color-primary;
 	background: none;
@@ -134,4 +145,10 @@
 	to {
 		transform: rotateZ(25deg) translate(-200%, 600%);
 	}
+}
+
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
 }

@@ -89,6 +89,28 @@ var app = (function(document, $) {
 			// 	return false;
 			// });
 
+			// Add rain effect for hero section
+			// var heroBg = $('#hero-bg');
+			// var heroWrap = $('.slider');
+
+			// var engine = new RainyDay({
+			// 	image: heroBg,
+			// 	parentElement: heroBg,
+			// 	blur: 3
+			// });
+
+			// engine.rain([[3, 2, 2]], 100);
+
+			// var rain = function() {
+			// 	var image = $('slider');
+
+			// 	image.onload = function() {
+
+			// 	};
+			// };
+
+			// rain();
+
 			// Glogbal var
 			var panorama;
 

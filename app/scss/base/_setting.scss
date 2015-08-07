@@ -11,7 +11,7 @@ $color-text: #3c3930;
 $color-text-light: #e9e5db;
 $color-link: #448D7A;
 
-$body-bg: #ddd;
+$body-bg: #EEE;
 
 // Font
 $font-family-primary: 'caviar_dreamsregular', sans-serif;
@@ -20,6 +20,6 @@ $font-family-secondary: 'lobster_tworegular', serif;
 $rem-base: 18px;
 
 // Breakpoint
-$small-screen: em-calc(640);
-$medium-screen: em-calc(1025);
+$small-screen: rem-calc(640);
+$medium-screen: rem-calc(1025);
 

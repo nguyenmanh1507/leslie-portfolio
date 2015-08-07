@@ -66,6 +66,18 @@
 	}
 }
 
+@media screen and (max-width: 468px) {
+	.site-name,
+	.social-list {
+		float: none;
+		text-align: center;
+	}
+
+	.social-list {
+		margin-top: 12px;
+	}
+}
+
 @keyframes circle {
 	40% {
 		box-shadow: 0 0 0 15px rgba(white, 0.1);

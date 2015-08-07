@@ -6,9 +6,13 @@
 
 // RESPONSIVE TYPO USING SASS MAP
 $p-font-sizes: (
-		null: em-calc(14),
-		#{$small-screen}: em-calc(16),
+		null: em-calc(16),
 		#{$medium-screen}: em-calc(18)
+	);
+
+$hero-text-fz: (
+		null: em-calc(54),
+		#{$medium-screen}: em-calc(72)
 	);
 
 @mixin font-size($fs-map) {
