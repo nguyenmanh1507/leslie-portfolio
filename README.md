@@ -11,5 +11,5 @@ Free Portfolio + working contact form
 * Using ajax to paginate portfolio section.
 
 ## Tool use
-* [Gruntjs](http://gruntjs.com/, target="_blank") - Task Runner
+* [Gruntjs](http://gruntjs.com/ target="_blank") - Task Runner
 * [Bower](http://bower.io) - Package manager
