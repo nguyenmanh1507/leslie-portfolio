@@ -13,6 +13,7 @@ Free Portfolio + working contact form
 ## Tool use
 * [Gruntjs](http://gruntjs.com/) - Task Runner
 * [Bower](http://bower.io) - Package manager
+
 ### Grunt plugins
 * __grunt-autoprefixer__ - Parse CSS and add vendor-prefixed CSS properties using the Can I Use database.
 * __grunt-contrib-clean__ - Clean files and folders.
