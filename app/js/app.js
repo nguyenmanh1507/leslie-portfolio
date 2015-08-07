@@ -77,6 +77,43 @@ var app = (function(document, $) {
 			// Filter portfolio
 			$('#p-item-wrap').mixItUp();
 
+			// Validate form using angular
+			angular.module('leslie', [])
+				.controller('contactForm', function($scope) {
+
+					$scope.name = undefined;
+					$scope.email = undefined;
+					$scope.message = undefined;
+
+					var $form = $('.contact');
+					var $contactTitle = $('.contact-title');
+
+					$scope.sendForm = function() {
+						$.ajax({
+							url: '//formspree.io/nguyenmanh1507@gmail.com',
+							method: 'POST',
+							data: {
+								name: $scope.name,
+								email: $scope.email,
+								message: $scope.message
+							},
+							dataType: 'json',
+							beforeSend: function() {
+								$form.addClass('is-loading');
+								console.log('sending...');
+							},
+							success: function() {
+								$form.removeClass('is-loading').addClass('is-send-success');
+								$contactTitle.text('Thank you! I\'ll contact you soon');
+								console.log('send form success');
+							}
+						});
+					};
+
+
+				})
+			;
+
 			// Vertical mousewheel smooth scroll
 			// var page = $('body');
 
@@ -88,28 +125,6 @@ var app = (function(document, $) {
 			// 	}
 			// 	return false;
 			// });
-
-			// Add rain effect for hero section
-			// var heroBg = $('#hero-bg');
-			// var heroWrap = $('.slider');
-
-			// var engine = new RainyDay({
-			// 	image: heroBg,
-			// 	parentElement: heroBg,
-			// 	blur: 3
-			// });
-
-			// engine.rain([[3, 2, 2]], 100);
-
-			// var rain = function() {
-			// 	var image = $('slider');
-
-			// 	image.onload = function() {
-
-			// 	};
-			// };
-
-			// rain();
 
 			// Glogbal var
 			var panorama;

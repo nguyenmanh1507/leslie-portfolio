@@ -78,6 +78,49 @@
 	float: right;
 }
 
+.form-control.ng-dirty.ng-invalid {
+	box-shadow: 0 0 0 5px rgba(#ED1D24, 0.5);
+}
+
+.form-control.ng-dirty.ng-valid {
+	box-shadow: 0 0 0 5px rgba(#9DF850, 0.5);
+}
+
+.loading-icon,
+.success-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	visibility: hidden;
+}
+
+.is-loading {
+	
+	.loading-icon {
+		visibility: visible;
+	}
+
+	.cf-input,
+	.cf-textarea,
+	.btn-submit {
+		opacity: 0.5;
+	}
+}
+
+.is-send-success {
+	.loading-icon,
+	.cf-input,
+	.cf-textarea,
+	.btn-submit {
+		visibility: hidden;
+	}
+
+	.success-icon {
+		visibility: visible;
+	}
+}
+
 @media screen and (max-width: 640px) {
 	.cf-input {
 		width: 100%;
