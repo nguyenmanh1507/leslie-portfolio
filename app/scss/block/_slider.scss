@@ -1,0 +1,67 @@
+/*
+ *
+ * SLIDER BLOCK
+ *
+*/
+
+.slider {
+	background: url(../images/hero-bg-small.jpg) no-repeat left top;
+	background-size: cover;
+	position: relative;
+	min-height: 480px;
+	height: 100%;
+
+	@media screen and (min-width: em-calc(600)) {
+		background-image: url(../images/hero-bg-medium.jpg);
+	}
+
+	@media screen and (min-width: em-calc(1200)) {
+		background-image: url(../images/hero-bg.jpg);
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba($color-secondary, 0.5) url(../images/pattern.png);
+	}
+}
+
+.slider-item {
+	position: absolute;
+	color: $color-primary;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+
+	&__title {
+		@include font-size($hero-text-fz);
+		margin: 0 0 rem-calc(20);
+		background-image: linear-gradient(#FDB5CF 25%, #B6FAFC 25%, #B6FAFC 50%, #FCFBB6 50%, #FCFBB6 75%, #E9D6FF 75%, #E9D6FF 100%);
+		background-size: 100% 30px;
+		background-repeat: repeat;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation: stripes 1s linear infinite;
+	}
+
+	&__descr {
+		font-family: $font-family-primary;
+		font-size: em-calc(30);
+		margin: 0;
+
+		@media screen and (max-width: 480px) {
+			font-size: em-calc(26);
+		}
+	}
+}
+
+@keyframes stripes {
+	to {
+		background-position: 0 -30px;
+	}
+}
+

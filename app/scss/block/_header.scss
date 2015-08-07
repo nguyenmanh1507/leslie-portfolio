@@ -1,0 +1,88 @@
+/*
+ *
+ * HEADER BLOCK
+ *
+*/
+
+.site-header {
+	padding: em-calc(20) 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.site-name {
+	float: left;
+	font-size: em-calc(30);
+	color: $color-primary;
+	margin: 0;
+}
+
+.social-list {
+	float: right;
+
+	.social-item {
+		display: inline-block;
+		margin: 0 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			height: 32px;
+			width: 32px;
+			border-radius: 50%;
+			border: 2px solid white;
+			text-align: center;
+			display: inline-block;
+			color: white;
+			font-size: 13px;
+			line-height: 29px;
+			box-shadow: 0 0 0 0 white;
+
+			&:hover {
+				animation: circle 1s ease-out infinite;
+			}
+		}
+
+		&.twitter a {
+			box-shadow: 0 0 0 0 #00aced;
+		}
+
+		&.instagram a {
+			box-shadow: 0 0 0 0 #517fa4;
+		}
+
+		&.flickr a {
+			box-shadow: 0 0 0 0 #ff0084;
+		}
+
+		&.pinterest a {
+			box-shadow: 0 0 0 0 #cb2027;
+		}
+	}
+}
+
+@media screen and (max-width: 468px) {
+	.site-name,
+	.social-list {
+		float: none;
+		text-align: center;
+	}
+
+	.social-list {
+		margin-top: 12px;
+	}
+}
+
+@keyframes circle {
+	40% {
+		box-shadow: 0 0 0 15px rgba(white, 0.1);
+	}
+	41% {
+		box-shadow: 0 0 0 0 rgba(white, 0);
+	}
+}

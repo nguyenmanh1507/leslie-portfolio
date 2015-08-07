@@ -45,4 +45,9 @@ node_modules
 .tmp
 app/bower_components
 .sass-cache
+<<<<<<< HEAD
 resources
+=======
+resources
+app/css/app.css.map
+>>>>>>> origin/dev
