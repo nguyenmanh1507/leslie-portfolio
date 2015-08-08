@@ -46,7 +46,6 @@
 	font-size: em-calc(16);
 	font-weight: bold;
 	color: $color-secondary;
-  text-transform: uppercase;
   padding: 10px 20px;
   transition: box-shadow 0.3s ease-out;
 
@@ -136,6 +135,7 @@
 	border: 2px solid $color-primary;
 	background: none;
 	display: block;
+	text-transform: uppercase;
 	margin: 0 auto;
 	max-width: 400px;
 	width: 100%;
@@ -162,23 +162,23 @@
 }
 
 ::-webkit-input-placeholder {
-   color: $color-secondary;
-   text-transform: uppercase;
+  color: $color-secondary;
+  text-transform: uppercase;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: $color-secondary;
-   text-transform: uppercase;
+  color: $color-secondary;
+  text-transform: uppercase;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: $color-secondary;
-   text-transform: uppercase;
+  color: $color-secondary;
+  text-transform: uppercase;
 }
 
 :-ms-input-placeholder {  
-   color: $color-secondary;
-   text-transform: uppercase;
+  color: $color-secondary;
+  text-transform: uppercase;
 }
 
 .footer-text {

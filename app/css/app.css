@@ -707,7 +707,6 @@ blockquote {
   font-size: 0.8888888889em;
   font-weight: bold;
   color: #61605f;
-  text-transform: uppercase;
   padding: 10px 20px;
   transition: box-shadow 0.3s ease-out;
 }
@@ -791,6 +790,7 @@ blockquote {
   border: 2px solid #e9e5db;
   background: none;
   display: block;
+  text-transform: uppercase;
   margin: 0 auto;
   max-width: 400px;
   width: 100%;
