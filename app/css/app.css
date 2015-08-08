@@ -707,7 +707,6 @@ blockquote {
   font-size: 0.8888888889em;
   font-weight: bold;
   color: #61605f;
-  text-transform: uppercase;
   padding: 10px 20px;
   transition: box-shadow 0.3s ease-out;
 }
@@ -791,11 +790,11 @@ blockquote {
   border: 2px solid #e9e5db;
   background: none;
   display: block;
+  text-transform: uppercase;
   margin: 0 auto;
   max-width: 400px;
   width: 100%;
   padding: 10px 0;
-  text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
   position: relative;
@@ -819,20 +818,24 @@ blockquote {
 
 ::-webkit-input-placeholder {
   color: #61605f;
+  text-transform: uppercase;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
   color: #61605f;
+  text-transform: uppercase;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
   color: #61605f;
+  text-transform: uppercase;
 }
 
 :-ms-input-placeholder {
   color: #61605f;
+  text-transform: uppercase;
 }
 
 .footer-text {

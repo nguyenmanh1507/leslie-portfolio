@@ -157,7 +157,7 @@ var app = (function(document, $) {
 			  infowindow = new google.maps.InfoWindow();
 
 			  // Custom map marker
-			  var image = '../images/camera.svg';
+			  var image = 'http://nguyenmanh1507.github.io/leslie-portfolio/dist/images/camera.svg';
 
 			  var marker = new google.maps.Marker({
 			    map: map,

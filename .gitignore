@@ -46,4 +46,6 @@ node_modules
 app/bower_components
 .sass-cache
 resources
+=======
+resources
 app/css/app.css.map
