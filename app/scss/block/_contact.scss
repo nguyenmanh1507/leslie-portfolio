@@ -140,7 +140,6 @@
 	max-width: 400px;
 	width: 100%;
 	padding: 10px 0;
-	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: bold;
 	position: relative;
@@ -164,18 +163,22 @@
 
 ::-webkit-input-placeholder {
    color: $color-secondary;
+   text-transform: uppercase;
 }
 
 :-moz-placeholder { /* Firefox 18- */
    color: $color-secondary;
+   text-transform: uppercase;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
    color: $color-secondary;
+   text-transform: uppercase;
 }
 
 :-ms-input-placeholder {  
    color: $color-secondary;
+   text-transform: uppercase;
 }
 
 .footer-text {
