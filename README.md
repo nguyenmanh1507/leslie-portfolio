@@ -46,7 +46,13 @@ Chrome, FF, IE10+, Opera
 * __rainyday__(0.1.1) - Not use - uninstall later.
 
 ## Inspiration
-placeholder
+* [Text animated](href="http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/")
+* [Animated backgroud](href="http://tympanus.net/codrops/2014/09/23/animated-background-headers/")
 
 ## Resource
-placehoder
+* [Free PSD](href"https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers")
+* [Photos](href="unsplash.com")
+* [Font Icon](href="fortawesome.github.io/Font-Awesome/")
+
+## Note
+* Not fallback background-clip text for Firefox.
