@@ -46,13 +46,13 @@ Chrome, FF, IE10+, Opera
 * __rainyday__(0.1.1) - Not use - uninstall later.
 
 ## Inspiration
-* [Text animated](href="http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/")
-* [Animated backgroud](href="http://tympanus.net/codrops/2014/09/23/animated-background-headers/")
+* [Text animated](http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/)
+* [Animated backgroud](http://tympanus.net/codrops/2014/09/23/animated-background-headers/)
 
 ## Resource
-* [Free PSD](href"https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers")
-* [Photos](href="unsplash.com")
-* [Font Icon](href="fortawesome.github.io/Font-Awesome/")
+* [Free PSD](https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers)
+* [Photos](http://unsplash.com)
+* [Font Icon](http://fortawesome.github.io/Font-Awesome/)
 
 ## Note
 * Not fallback background-clip text for Firefox.
