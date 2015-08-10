@@ -102,7 +102,7 @@ var app = (function(document, $) {
 								$form.addClass('is-loading');
 								console.log('sending...');
 							},
-							success: function() {
+							complete: function() {
 								$form.removeClass('is-loading').addClass('is-send-success');
 								$contactTitle.text('Thank you! I\'ll contact you soon');
 								console.log('send form success');
