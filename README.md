@@ -56,3 +56,4 @@ Chrome, FF, IE10+, Opera
 
 ## Note
 * Not fallback background-clip text for Firefox.
+* Add rich snippets (schema.org)
