@@ -50,9 +50,15 @@ Chrome, FF, IE10+, Opera
 * [Animated backgroud](http://tympanus.net/codrops/2014/09/23/animated-background-headers/)
 
 ## Resource
+<<<<<<< HEAD
 * [Free PSD](https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers)
 * [Photos](http://unsplash.com)
 * [Font Icon](http://fortawesome.github.io/Font-Awesome/)
+=======
+* [Free PSD](href="https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers")
+* [Photos](href="unsplash.com")
+* [Font Icon](href="fortawesome.github.io/Font-Awesome/")
+>>>>>>> 9dadcd8b5de0c6e9160880ff61ab15873f3472c3
 
 ## Note
 * Not fallback background-clip text for Firefox.
