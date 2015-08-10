@@ -50,7 +50,7 @@ Chrome, FF, IE10+, Opera
 * [Animated backgroud](href="http://tympanus.net/codrops/2014/09/23/animated-background-headers/")
 
 ## Resource
-* [Free PSD](href"https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers")
+* [Free PSD](href="https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers")
 * [Photos](href="unsplash.com")
 * [Font Icon](href="fortawesome.github.io/Font-Awesome/")
 
