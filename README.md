@@ -34,6 +34,7 @@ Chrome, FF, IE10+, Opera
 * __grunt-usemin__ - Replaces references to non-optimized scripts or stylesheets into a set of HTML files (or any templates/views).
 * __grunt-wiredep__ - Inject your Bower dependencies right into your HTML from Grunt.
 * __load-grunt-tasks__ - Load multiple grunt tasks using globbing patterns.
+* __grunt-critical__ - Grunt task to extract & inline critical-path CSS from HTML
 
 ### Dependencies
 * __jQuery__(2.1.4)
