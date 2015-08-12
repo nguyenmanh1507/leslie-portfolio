@@ -125,13 +125,13 @@ module.exports = function(grunt) {
 		critical: {
 			app: {
 				options: {
-					base: '<%= app %>/',
-					css: ['<%= app %>/css/app.css'],
+					base: '<%= dist %>/',
+					css: ['<%= dist %>/css/app.min.css'],
 					width: 1306,
 					height: 768
 				},
-				src: '<%= app %>/index.html',
-				dest: '<%= app %>/index-critical.html'
+				src: '<%= dist %>/index.html',
+				dest: '<%= dist %>/index-critical.html'
 			}
 		},
 
