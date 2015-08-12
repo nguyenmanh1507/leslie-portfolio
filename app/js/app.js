@@ -114,18 +114,9 @@ var app = (function(document, $) {
 				})
 			;
 
-			// Vertical mousewheel smooth scroll
-			// var page = $('body');
-
-			// $w.mousewheel(function(event, delta, deltaX, deltaY) {
-			// 	if(delta < 0) {
-			// 		page.scrollTop(page.scrollTop() + 30);
-			// 	} else {
-			// 		page.scrollTop(page.scrollTop() - 30);
-			// 	}
-			// 	return false;
-			// });
-
+			// Page smooth scroll
+			
+	
 			// Glogbal var
 			var panorama;
 

@@ -122,7 +122,18 @@ module.exports = function(grunt) {
 			}
 		},
 
-
+		critical: {
+			app: {
+				options: {
+					base: '<%= dist %>/',
+					css: ['<%= dist %>/css/app.min.css'],
+					width: 1306,
+					height: 768
+				},
+				src: '<%= dist %>/index.html',
+				dest: '<%= dist %>/index-critical.html'
+			}
+		},
 
 		connect: {
 			app: {
