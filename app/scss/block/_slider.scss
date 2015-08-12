@@ -40,7 +40,7 @@
 	&__title {
 		@include font-size($hero-text-fz);
 		margin: 0 0 rem-calc(20);
-		background-image: linear-gradient(#FDB5CF 25%, #B6FAFC 25%, #B6FAFC 50%, #FCFBB6 50%, #FCFBB6 75%, #E9D6FF 75%, #E9D6FF 100%);
+		background-image: -webkit-linear-gradient(#FDB5CF 25%, #B6FAFC 25%, #B6FAFC 50%, #FCFBB6 50%, #FCFBB6 75%, #E9D6FF 75%, #E9D6FF 100%);
 		background-size: 100% 30px;
 		background-repeat: repeat;
 		-webkit-background-clip: text;
