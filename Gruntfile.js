@@ -125,7 +125,7 @@ module.exports = function(grunt) {
 		critical: {
 			dist: {
 				options: {
-					base: './',
+					base: '/',
 					css: ['<%= dist %>/css/app.min.css'],
 					width: 1306,
 					height: 768
