@@ -58,3 +58,7 @@ Chrome, FF, IE10+, Opera
 ## Note
 * Not fallback background-clip text for Firefox.
 * Add rich snippets (schema.org)
+
+## Demo
+* [homepage](http://nguyenmanh1507.github.io/leslie-portfolio/dist)
+* [homepage-criticalcss](http://nguyenmanh1507.github.io/leslie-portfolio/dist/index-critical.html) - testing state
