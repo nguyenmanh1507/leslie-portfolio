@@ -61,4 +61,4 @@ Chrome, FF, IE10+, Opera
 
 ## Demo
 * [homepage](http://nguyenmanh1507.github.io/leslie-portfolio/dist)
-* [homepage-criticalcss](http://nguyenmanh1507.github.io/leslie-portfolio/dist/index-critical.html) - not complete
+* [homepage-criticalcss](http://nguyenmanh1507.github.io/leslie-portfolio/dist/index-critical.html) - testing state
