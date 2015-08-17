@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 		sass: {
 			options: {
 				sourceMap: true,
-				outputStyle: 'expanded'
+				outputStyle: 'compressed'
 			},
 			dist: {
 				files: {
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd:'<%= app %>/',
-					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**', 'video/**', 'favicon.ico'],
+					src: ['fonts/**', '**/*.html', '!**/*.scss', '!bower_components/**', 'video/**', 'favicon.ico', '.htaccess'],
 					dest: '<%= dist %>/'
 				}, {
 					expand: true,
@@ -122,7 +122,18 @@ module.exports = function(grunt) {
 			}
 		},
 
-
+		critical: {
+			dist: {
+				options: {
+					base: './',
+					css: ['<%= dist %>/css/app.min.css'],
+					width: 1306,
+					height: 768
+				},
+				src: '<%= dist %>/index.html',
+				dest: '<%= dist %>/index-critical.html'
+			}
+		},
 
 		connect: {
 			app: {

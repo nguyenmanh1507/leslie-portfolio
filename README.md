@@ -34,6 +34,7 @@ Chrome, FF, IE10+, Opera
 * __grunt-usemin__ - Replaces references to non-optimized scripts or stylesheets into a set of HTML files (or any templates/views).
 * __grunt-wiredep__ - Inject your Bower dependencies right into your HTML from Grunt.
 * __load-grunt-tasks__ - Load multiple grunt tasks using globbing patterns.
+* __grunt-critical__ - Grunt task to extract & inline critical-path CSS from HTML
 
 ### Dependencies
 * __jQuery__(2.1.4)
@@ -46,7 +47,18 @@ Chrome, FF, IE10+, Opera
 * __rainyday__(0.1.1) - Not use - uninstall later.
 
 ## Inspiration
-placeholder
+* [Text animated](http://tympanus.net/codrops/2015/02/16/create-animated-text-fills/)
+* [Animated backgroud](http://tympanus.net/codrops/2014/09/23/animated-background-headers/)
 
 ## Resource
-placehoder
+* [Free PSD](https://www.behance.net/gallery/26886289/Leslie-PSD-portfolio-page-for-photographers)
+* [Photos](http://unsplash.com)
+* [Font Icon](http://fortawesome.github.io/Font-Awesome/)
+
+## Note
+* Not fallback background-clip text for Firefox.
+* Add rich snippets (schema.org)
+
+## Demo
+* [homepage](http://nguyenmanh1507.github.io/leslie-portfolio/dist)
+* [homepage-criticalcss](http://nguyenmanh1507.github.io/leslie-portfolio/dist/index-critical.html) - testing state

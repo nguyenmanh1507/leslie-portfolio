@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Leslie Portfolio</title>
-  <meta name="description" content="">
+  <meta name="description" content="I'm Leslie - Freelance photographer">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -331,12 +332,12 @@
 
         <div class="cf-input cf-right">
           <label for="email" class="sr-only">Your email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="your email" ng-model="cfCtrl.email" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="your email" ng-model="email" required>
         </div>
 
         <div class="cf-textarea">
           <label for="message" class="sr-only">Your message</label>
-          <textarea name="message" class="form-control form-textarea" id="message" placeholder="your message (10 - 255 char)" ng-model="cfCtrl.message" ng-minlength="10" ng-max-length="255" required></textarea>
+          <textarea name="message" class="form-control form-textarea" id="message" placeholder="your message (10 - 255 char)" ng-model="message" ng-minlength="10" ng-max-length="255" required></textarea>
         </div>
 
         <button type="submit" class="btn-submit">Submit</button>
@@ -405,6 +406,7 @@
       
   <script src="js/vendor/libraries.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;id=AIzaSyC2GOKfSxsyruo8hsFn3ezcJt2x4rJMxaM&amp;signed_in=true"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 </html>

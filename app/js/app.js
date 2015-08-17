@@ -102,7 +102,7 @@ var app = (function(document, $) {
 								$form.addClass('is-loading');
 								console.log('sending...');
 							},
-							success: function() {
+							complete: function() {
 								$form.removeClass('is-loading').addClass('is-send-success');
 								$contactTitle.text('Thank you! I\'ll contact you soon');
 								console.log('send form success');
@@ -114,18 +114,9 @@ var app = (function(document, $) {
 				})
 			;
 
-			// Vertical mousewheel smooth scroll
-			// var page = $('body');
-
-			// $w.mousewheel(function(event, delta, deltaX, deltaY) {
-			// 	if(delta < 0) {
-			// 		page.scrollTop(page.scrollTop() + 30);
-			// 	} else {
-			// 		page.scrollTop(page.scrollTop() - 30);
-			// 	}
-			// 	return false;
-			// });
-
+			// Page smooth scroll
+			
+	
 			// Glogbal var
 			var panorama;
 
@@ -157,7 +148,7 @@ var app = (function(document, $) {
 			  infowindow = new google.maps.InfoWindow();
 
 			  // Custom map marker
-			  var image = '../images/camera.svg';
+			  var image = 'http://nguyenmanh1507.github.io/leslie-portfolio/dist/images/camera.svg';
 
 			  var marker = new google.maps.Marker({
 			    map: map,
