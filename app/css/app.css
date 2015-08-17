@@ -240,8 +240,7 @@ a {
 }
 
 .social-list .social-item a:hover {
-  -webkit-animation: circle 1s ease-out infinite;
-          animation: circle 1s ease-out infinite;
+  animation: circle 1s ease-out infinite;
 }
 
 .social-list .social-item.twitter a {
@@ -268,15 +267,6 @@ a {
   }
   .social-list {
     margin-top: 12px;
-  }
-}
-
-@-webkit-keyframes circle {
-  40% {
-    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.1);
-  }
-  41% {
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
 }
 
@@ -329,22 +319,18 @@ a {
   color: #e9e5db;
   width: 100%;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .slider-item__title {
   font-size: 3em;
   margin: 0 0 1.1111111111rem;
-  background-image: -webkit-linear-gradient(#FDB5CF 25%, #B6FAFC 25%, #B6FAFC 50%, #FCFBB6 50%, #FCFBB6 75%, #E9D6FF 75%, #E9D6FF 100%);
   background-image: linear-gradient(#FDB5CF 25%, #B6FAFC 25%, #B6FAFC 50%, #FCFBB6 50%, #FCFBB6 75%, #E9D6FF 75%, #E9D6FF 100%);
   background-size: 100% 30px;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: stripes 1s linear infinite;
-          animation: stripes 1s linear infinite;
+  animation: stripes 1s linear infinite;
 }
 
 @media screen and (min-width: 56.9444444444rem) {
@@ -365,12 +351,6 @@ a {
   }
 }
 
-@-webkit-keyframes stripes {
-  to {
-    background-position: 0 -30px;
-  }
-}
-
 @keyframes stripes {
   to {
     background-position: 0 -30px;
@@ -383,13 +363,8 @@ a {
  *
 */
 .p-item-wrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .p-item-wrap .mix {
@@ -402,9 +377,7 @@ a {
   margin: 40px auto 0;
   padding: 10px;
   width: 100%;
-  -webkit-flex-basis: 300px;
-      -ms-flex-preferred-size: 300px;
-          flex-basis: 300px;
+  flex-basis: 300px;
   position: relative;
 }
 
@@ -431,13 +404,11 @@ a {
   margin-left: 6px;
   font-size: 25px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  -webkit-transform: rotateZ(41deg);
-          transform: rotateZ(41deg);
+  transform: rotateZ(41deg);
 }
 
 .p-item__thumbnail {
-  -webkit-transition: -webkit-filter 0.5s;
-          transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
 }
 
 .p-item__thumbnail:hover {
@@ -463,14 +434,11 @@ a {
   position: absolute;
   left: 0;
   bottom: -2px;
-  -webkit-transition: -webkit-transform 0.5s;
-          transition: transform 0.5s;
+  transition: transform 0.5s;
 }
 
 .p-item__name a:hover:before {
-  -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 .filter-wrap {
@@ -486,8 +454,7 @@ a {
   padding: 5px 10px;
   margin: 0 5px 10px;
   position: relative;
-  -webkit-transition: all 0.5s ease-out;
-          transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -495,9 +462,7 @@ a {
 .filter.active {
   border: none;
   border-radius: 3px;
-  -webkit-transform: translateY(4px);
-      -ms-transform: translateY(4px);
-          transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 .filter:focus {
@@ -525,15 +490,12 @@ a {
   position: absolute;
   left: 0;
   bottom: -4px;
-  -webkit-transition: -webkit-transform 0.5s ease-out;
-          transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
 }
 
 .filter:hover:before,
 .filter.active:before {
-  -webkit-transform: translateY(-4px);
-      -ms-transform: translateY(-4px);
-          transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 /*
@@ -635,8 +597,7 @@ blockquote {
   font-size: 64px;
   margin: 0.8333333333rem;
   position: relative;
-  -webkit-transition: -webkit-transform 0.5s ease;
-          transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .git-list .git-item a:before,
@@ -649,27 +610,20 @@ blockquote {
   left: 0;
   border-radius: 50%;
   box-shadow: 0 0 0 5px rgba(97, 96, 95, 0);
-  -webkit-transition: -webkit-transform 0.5s ease;
-          transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .git-list .git-item a:hover {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .git-list .git-item a:hover:before {
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
   box-shadow: 0 0 0 5px rgba(97, 96, 95, 0.2);
 }
 
 .git-list .git-item a:hover:after {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   box-shadow: 0 0 0 5px rgba(97, 96, 95, 0.2);
 }
 
@@ -755,8 +709,7 @@ blockquote {
   color: #61605f;
   text-transform: uppercase;
   padding: 10px 20px;
-  -webkit-transition: box-shadow 0.3s ease-out;
-          transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
 }
 
 .form-control:hover,
@@ -799,8 +752,7 @@ blockquote {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   visibility: hidden;
 }
 
@@ -857,15 +809,12 @@ blockquote {
   left: 100%;
   height: 100%;
   width: 100%;
-  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.5), transparent);
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent);
-  -webkit-transform: rotateZ(25deg);
-          transform: rotateZ(25deg);
+  transform: rotateZ(25deg);
 }
 
 .btn-submit:hover:after {
-  -webkit-animation: glassEffect 0.8s ease-out infinite;
-          animation: glassEffect 0.8s ease-out infinite;
+  animation: glassEffect 0.8s ease-out infinite;
 }
 
 ::-webkit-input-placeholder {
@@ -892,17 +841,9 @@ blockquote {
   padding-top: 1.1111111111em;
 }
 
-@-webkit-keyframes glassEffect {
-  to {
-    -webkit-transform: rotateZ(25deg) translate(-200%, 600%);
-            transform: rotateZ(25deg) translate(-200%, 600%);
-  }
-}
-
 @keyframes glassEffect {
   to {
-    -webkit-transform: rotateZ(25deg) translate(-200%, 600%);
-            transform: rotateZ(25deg) translate(-200%, 600%);
+    transform: rotateZ(25deg) translate(-200%, 600%);
   }
 }
 
@@ -911,3 +852,5 @@ blockquote {
   top: 0;
   left: 0;
 }
+
+/*# sourceMappingURL=app.css.map */
