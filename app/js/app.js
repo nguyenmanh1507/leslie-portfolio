@@ -77,6 +77,51 @@ var app = (function(document, $) {
 			// Filter portfolio
 			$('#p-item-wrap').mixItUp();
 
+			// Flickr API
+			var fr = $('.flickr');
+			var modal = $('.modal-wrap');
+			var modalContent = $('#modal-content');
+			var modalImg = $('.modal__img');
+			var oldScr = modalImg.prop('src');	
+
+			fr.on('click', function(e) {
+
+				e.preventDefault();
+
+				var src, href, w, h;
+				var photoId = $(this).data('photo-id');
+				var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&jsoncallback=?';
+				var options = {
+					api_key: '443237a89d7a051f84da874720971f26',
+					photo_id: photoId,
+					format: 'json'
+				};
+				var getFlickrPhotos = function(data, status) {
+					src = data.sizes.size[6].source;
+					w = data.sizes.size[6].width;
+					h = data.sizes.size[6].height;
+					href = 'https://www.flickr.com/photos/100956874@N08/' + photoId;
+					// modalContentHTML += '<img class="modal__img" src="' + src + '">';
+					// modalContent.html(modalContentHTML);
+					modalImg.prop('src', src);
+					$('.modal__link').prop('href', href);
+				};
+
+				$.getJSON(url, options, getFlickrPhotos);
+
+				// Show Modal windown
+				modal.fadeIn('fast');
+				$('body').addClass('no-scroll');
+
+			});
+
+			// Close Modal windown
+			$('.modal__close').on('click', function() {
+				modal.fadeOut('fast');
+				modalImg.prop('src', oldScr);
+				$('body').removeClass('no-scroll');
+			});
+
 			// Validate form using angular
 			angular.module('leslie', [])
 				.controller('contactForm', function($scope) {
@@ -109,7 +154,6 @@ var app = (function(document, $) {
 							}
 						});
 					};
-
 
 				})
 			;
