@@ -82,11 +82,13 @@ var app = (function(document, $) {
 			var modal = $('.modal-wrap');
 			var modalContent = $('#modal-content');
 			var modalImg = $('.modal__img');
-			var oldScr = modalImg.prop('src');	
+			var modalLink = $('.modal__link');
 
 			fr.on('click', function(e) {
 
 				e.preventDefault();
+
+				var modalContentHTML = '';
 
 				var src, href, w, h;
 				var photoId = $(this).data('photo-id');
@@ -101,10 +103,10 @@ var app = (function(document, $) {
 					w = data.sizes.size[6].width;
 					h = data.sizes.size[6].height;
 					href = 'https://www.flickr.com/photos/100956874@N08/' + photoId;
-					// modalContentHTML += '<img class="modal__img" src="' + src + '">';
-					// modalContent.html(modalContentHTML);
-					modalImg.prop('src', src);
-					$('.modal__link').prop('href', href);
+					modalContentHTML += '<img class="modal__img" src="' + src + '">';
+					modalContent.html(modalContentHTML);
+					// modalImg.prop('src', src);
+					modalLink.prop('href', href);
 				};
 
 				$.getJSON(url, options, getFlickrPhotos);
@@ -118,7 +120,7 @@ var app = (function(document, $) {
 			// Close Modal windown
 			$('.modal__close').on('click', function() {
 				modal.fadeOut('fast');
-				modalImg.prop('src', oldScr);
+				modalContent.html('');
 				$('body').removeClass('no-scroll');
 			});
 
