@@ -94,7 +94,7 @@ var app = (function(document, $) {
 				var photoId = $(this).data('photo-id');
 				var url = 'https://api.flickr.com/services/rest/?method=flickr.photos.getSizes&jsoncallback=?';
 				var options = {
-					api_key: '443237a89d7a051f84da874720971f26',
+					api_key: '9661554d9a82404317abb27755785098',
 					photo_id: photoId,
 					format: 'json'
 				};
