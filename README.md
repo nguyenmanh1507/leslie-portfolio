@@ -8,7 +8,6 @@ Free Portfolio + working contact form
 * Intergrate Google map
 * Contact form
 * When click to portfolio, modal window show up with related information.
-* Using ajax to paginate portfolio section.
 
 ## Browsers Support
 Chrome, FF, IE10+, Opera
