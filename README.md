@@ -55,7 +55,6 @@ Chrome, FF, IE10+, Opera
 * [Font Icon](http://fortawesome.github.io/Font-Awesome/)
 
 ## Note
-* Not fallback background-clip text for Firefox.
 * Add rich snippets (schema.org)
 
 ## Demo
