@@ -55,7 +55,6 @@ Chrome, FF, IE10+, Opera
 * [Font Icon](http://fortawesome.github.io/Font-Awesome/)
 
 ## Note
-* Add rich snippets (schema.org)
 
 ## Demo
 * [homepage](http://nguyenmanh1507.github.io/leslie-portfolio/dist)
